@@ -26,17 +26,17 @@ It's relatively easy to set-up a Neo4J server but allowing multiple people to us
 4. Change into that subdirectory `cd neo4j-community-2.3.1/`
 5. Start a version of neo4J:  `bin/neo4j console`
 
-You can connect to your neo4J server using a web-browser.  Use the address `http://localhost:7474/`.  The first time you do so, you will need to change the default password.
+You can connect to your neo4J server using a web-browser.  Use the address `http://localhost:7474/`.  The first time you do so, you will be asked to log in (if you look closely you will see the username and password are both `neo4j`.  On your first log-in you will need to change the default password.
 
-There are two major, interactive, interfaces to a neo4J system.  One is a browser based (the main one that we will be using), and the other is more of a classic shell interface.  
+After logging into the system you will see a variety of options that you can choose to start learning how to use neo4j.  We'll go through those in a minute.  First a brief aside:  There are two major, interactive, interfaces to a neo4J system.  One is a browser based (the main one that we will be using), and the other is more of a classic shell interface.  
 
-Because of the nature of the database's paradigm, the browser based approach offers nice graphical flexibility and that is  where we will begin.  Go to localhost:7474 and log in.  Now go through their tutorials-- the first is started by clicking on the button "Start Learning"  It's about 7 slides.  A key thing to notice is that client-side commands begin with a colon, and server side commands are given using a language called CYPHER (which is introduced in intro # 3).
+Because of the nature of the database's paradigm, the browser based approach offers nice graphical flexibility and that is  where we will begin.  Go to localhost:7474 and log in.  Now go through their tutorials-- the first is started by clicking on the button "Start Learning"  It's about 7 slides.  A key thing to notice is that client-side commands begin with a colon, and server side commands are given using a language called CYPHER.
 
-When you reach the end of those 7 slides you have a few options-- click on the button for `Intro` which should start a guided tour. of about the same length.  At the end of that you will see `Concepts`, but you've already gone through that.  If you want the reinforcement, read again about nodes, relationships, and properties as they are used in neo4J.  Note the following correspondence:
+When you reach the end of those 7 slides you have a few options-- click on the button for `Intro` which should start a guided tour of about the same length.  At the end of that you will see `Concepts`, but you've already gone through that.  If you want the reinforcement, read again about nodes, relationships, and properties as they are used in neo4J.  Note the following correspondence:
 
-	SQL	   | mongo |neo4J 
-	-------|-------|-----
-	record|document|node
+SQL    | mongo  |neo4J 
+-------|--------|-----
+record |document|node
 	
 I don't think you should take the correspondence too far because SOMETIMES (like when you are trying to make sense of the neo4j version of a query) it is easier to think of a node as a column…. but in general, the above correspondence makes the most sense to me.
 
